@@ -17,6 +17,9 @@ public class Principal {
 		// System.out.println(this.media(p1));
 		// this.removerElemento(p1, 26);
 		// this.substituirElemento(p1, 55, 3);
+		// this.removerElementoPosicao(p1, 2);
+		// this.interpolation(p1, p2);
+		// this.verification(p1, p2);
 		// this.print(p1);
 	}
 
@@ -46,6 +49,26 @@ public class Principal {
 		while (!aux.empty()) {
 			p.push(aux.pop());
 		}
+	}
+
+	// Construa um método para remover um elemento de determinada posição p da pilha, 
+	// onde p é passado como argumento para o método
+	public void removerElementoPosicao(Stack p, int posicao) {
+		Stack aux = new Stack();
+
+//		// Copiar os valores de p para a pilha aux, com
+//		// exce��o do valor recebido
+//		while (!p.empty()) {
+//			int t = p.pop();
+//			if (t != valor) {
+//				aux.push(t);
+//			}
+//		}
+//
+//		// Copiar de volta para p os valores da aux
+//		while (!aux.empty()) {
+//			p.push(aux.pop());
+//		}
 	}
 
 	// Lista 1 - Exerc�cio 2
@@ -253,4 +276,17 @@ public class Principal {
 			p.push(aux.pop());
 		}
 	}
+	
+	// Construa um método que receba duas pilhas (p1 e p2) e retorne uma terceira pilha (p3) 
+	// formada pela interpolação dos elementos de p1 e p2 da seguinte forma:
+	public void interpolation(Stack p1, Stack p2) {
+//		p1: (topo) 12-15-16-20
+//		p2: (topo) 13-21-17-14
+//		p3: (topo) 14-20-17-16-21-15-13-12
+	}
+	
+	// Construa um método que receba uma pilha qualquer e verifique se a mesma obedece a seguinte condição
+	// o primeiro elemento (topo) é igual a último, o segundo é igual ao penúltimo e assim por diante. 
+	// Retorne true caso isso ocorra.
+	public void verification(Stack p1, Stack p2) { }
 }
